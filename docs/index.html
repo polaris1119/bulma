@@ -22,29 +22,29 @@ fixed_navbar: true
           <span class="icon is-large" style="margin-right: 10px;">
             <i class="fa fa-3x fa-desktop"></i>
           </span>
-          <p class="title is-4" style="margin-top: 0.5em;"><strong>100% Responsive</strong></p>
-          <p class="subtitle">Designed for <strong>mobile</strong> first</p>
+          <p class="title is-4" style="margin-top: 0.5em;"><strong title="100% Responsive">100% 响应式</strong></p>
+          <p class="subtitle" title="Designed for mobile first"><strong>手机</strong>优先的设计</p>
         </a>
         <a class="column has-text-centered" href="{{ site.url }}/documentation/overview/modular/">
           <span class="icon is-large">
             <i class="fa fa-3x fa-cubes"></i>
           </span>
-          <p class="title is-4" style="margin-top: 0.5em;"><strong>Modular</strong></p>
-          <p class="subtitle">Just import what you <strong>need</strong></p>
+          <p class="title is-4" style="margin-top: 0.5em;"><strong title="Modular">模块化</strong></p>
+          <p class="subtitle" title="Just import what you need">只导入你<strong>所需</strong>的</p>
         </a>
         <a class="column has-text-centered" href="{{ site.url }}/documentation/columns/basics/">
           <span class="icon is-large">
             <i class="fa fa-3x fa-css3"></i>
           </span>
-          <p class="title is-4" style="margin-top: 0.5em;"><strong>Modern</strong></p>
-          <p class="subtitle">Built with <strong>Flexbox</strong></p>
+          <p class="title is-4" style="margin-top: 0.5em;"><strong title="Modern">现代的</strong></p>
+          <p class="subtitle" title="Built with Flexbox">使用 <strong>Flexbox</strong> 构建</p>
         </a>
         <a class="column has-text-centered" href="{{ site.github }}">
           <span class="icon is-large">
             <i class="fa fa-3x fa-github"></i>
           </span>
-          <p class="title is-4" style="margin-top: 0.5em;"><strong>Free</strong></p>
-          <p class="subtitle">Open source on <strong>GitHub</strong></p>
+          <p class="title is-4" style="margin-top: 0.5em;"><strong title="Free">免费</strong></p>
+          <p class="subtitle" title="Open source on GitHub">在 <strong>GitHub</strong> 上开源</p>
         </a>
       </nav>
     </div>
@@ -61,11 +61,11 @@ fixed_navbar: true
       <span class="icon is-medium">
         <i class="fa fa-pause"></i>
       </span>
-      <a href="{{ site.url }}/documentation/columns/basics">
-        Simple <strong>columns</strong>
+      <a href="{{ site.url }}/documentation/columns/basics" title="Simple columns">
+        简单的 <strong>columns</strong>
       </a>
     </h3>
-    <h4 class="subtitle is-4">Just add columns, they will resize themselves</h4>
+    <h4 class="subtitle is-4" title="Just add columns, they will resize themselves">只要添加 columns, 它们将调整自己的大小</h4>
     <div id="grid" class="columns">
       <div class="column">
         <div class="notification is-primary has-text-centered">
@@ -130,16 +130,17 @@ fixed_navbar: true
     </div>
     <div class="field has-addons has-addons-centered">
       <p class="control">
-        <a id="add" class="button is-unselectable">Add column</a>
+        <a id="add" class="button is-unselectable">增加 column</a>
       </p>
       <p class="control">
-        <a id="remove" class="button is-unselectable">Remove column</a>
+        <a id="remove" class="button is-unselectable">移除 column</a>
       </p>
     </div>
     <div id="message" class="message is-info">
-      <p class="message-header">Info</p>
-      <p class="message-body">While it's possible to add as many columns as you want, it is recommended to stick with <strong>12 columns</strong>.<br>
-      If you want smaller divisions, you can always <strong>nest</strong> columns.</p>
+      <p class="message-header" title="Info">提示</p>
+      <p class="message-body" title="While it's possible to add as many columns as you want, it is recommended to stick with 12 columns.If you want smaller divisions, you can always nest columns.">
+        虽然可以根据需要添加尽可能多的列, 但建议您最多使用 <strong>12 列</strong>。如果需要更小的细分, 你应该始终通过 <strong>嵌套</strong>  列来实现。
+      </p>
     </div>
     <div id="markup">
 {% highlight html %}
@@ -163,11 +164,11 @@ fixed_navbar: true
       <span class="icon is-medium">
         <i class="fa fa-th-large"></i>
       </span>
-      <a href="{{ site.url }}/documentation/layout/tiles">
-        Magic <strong>tiles</strong>
+      <a href="{{ site.url }}/documentation/layout/tiles" title="Magic tiles">
+        魔法<strong>瓷砖(tiles)</strong>
       </a>
     </h3>
-    <h4 class="subtitle is-4">A single element for a Metro UI-style CSS grid</h4>
+    <h4 class="subtitle is-4" title="A single element for a Metro UI-style CSS grid">单个元素的 Metro UI 风格的 CSS 网格</h4>
     <div class="tile is-ancestor">
       <div class="tile is-vertical is-8">
         <div class="tile">

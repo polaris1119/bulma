@@ -30,30 +30,30 @@
   <div id="navMenu{{ include.id }}" class="navbar-menu">
     <div class="navbar-start">
       <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link {% if page.route == 'documentation' %}is-active{% endif %} {% if page.layout == 'documentation' %}is-active{% endif %}" href="{{ site.documentation }}">
-          Docs
+        <a class="navbar-link {% if page.route == 'documentation' %}is-active{% endif %} {% if page.layout == 'documentation' %}is-active{% endif %}" href="{{ site.documentation }}" title="Docs">
+          文档
         </a>
         <div class="navbar-dropdown {% if include.boxed %}is-boxed{% endif %}">
-          <a class="navbar-item {% if page.doc-tab == 'overview' %}is-active{% endif %}" href="{{ site.documentation }}">
-            Overview
+          <a class="navbar-item {% if page.doc-tab == 'overview' %}is-active{% endif %}" href="{{ site.documentation }}" title="Overview">
+            概述
           </a>
-          <a class="navbar-item {% if page.doc-tab == 'modifiers' %}is-active{% endif %}" href="{{ site.url }}/documentation/modifiers/syntax/">
-            Modifiers
+          <a class="navbar-item {% if page.doc-tab == 'modifiers' %}is-active{% endif %}" href="{{ site.url }}/documentation/modifiers/syntax/" title="Modifiers">
+            修改器
           </a>
-          <a class="navbar-item {% if page.doc-tab == 'columns' %}is-active{% endif %}" href="{{ site.url }}/documentation/columns/basics/">
-            Columns
+          <a class="navbar-item {% if page.doc-tab == 'columns' %}is-active{% endif %}" href="{{ site.url }}/documentation/columns/basics/" title="Columns">
+            网格
           </a>
-          <a class="navbar-item {% if page.doc-tab == 'layout' %}is-active{% endif %}" href="{{ site.url }}/documentation/layout/container/">
-            Layout
+          <a class="navbar-item {% if page.doc-tab == 'layout' %}is-active{% endif %}" href="{{ site.url }}/documentation/layout/container/" title="Layout">
+            布局
           </a>
-          <a class="navbar-item {% if page.doc-tab == 'form' %}is-active{% endif %}" href="{{ site.url }}/documentation/form/general/">
-            Form
+          <a class="navbar-item {% if page.doc-tab == 'form' %}is-active{% endif %}" href="{{ site.url }}/documentation/form/general/" title="Form">
+            表单
           </a>
-          <a class="navbar-item {% if page.doc-tab == 'elements' %}is-active{% endif %}" href="{{ site.url }}/documentation/elements/box/">
-            Elements
+          <a class="navbar-item {% if page.doc-tab == 'elements' %}is-active{% endif %}" href="{{ site.url }}/documentation/elements/box/" title="Elements">
+            基本元素
           </a>
-          <a class="navbar-item {% if page.doc-tab == 'components' %}is-active{% endif %}" href="{{ site.url }}/documentation/components/breadcrumb/">
-            Components
+          <a class="navbar-item {% if page.doc-tab == 'components' %}is-active{% endif %}" href="{{ site.url }}/documentation/components/breadcrumb/" title="Components">
+            组件
           </a>
           <hr class="navbar-divider">
           <div class="navbar-item">
@@ -63,7 +63,7 @@
               </p>
               {{#unless site.deprecated}}
                 <small>
-                  <a class="bd-view-all-versions" href="https://versions.bulma.io/">View all versions</a>
+                  <a class="bd-view-all-versions" href="https://versions.bulma.io/" title="View all versions">查看所有版本</a>
                 </small>
               {{/unless}}
             </div>
@@ -71,8 +71,8 @@
         </div>
       </div>
       <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link {% if page.route == 'blog' %}is-active{% endif %}" href="{{ site.url }}/blog/">
-          Blog
+        <a class="navbar-link {% if page.route == 'blog' %}is-active{% endif %}" href="{{ site.url }}/blog/" title="Blog">
+          博客
         </a>
         <div id="blogDropdown" class="navbar-dropdown {% if include.boxed %}is-boxed{% endif %}" data-style="width: 18rem;">
           {% for post in site.posts limit:3 %}
@@ -85,8 +85,8 @@
               </div>
             </a>
           {% endfor %}
-          <a class="navbar-item" href="{{ site.url }}/blog/">
-            More posts
+          <a class="navbar-item" href="{{ site.url }}/blog/" title="More posts">
+            更多文章
           </a>
           <hr class="navbar-divider">
           <div class="navbar-item">
@@ -94,7 +94,7 @@
               <div class="level is-mobile">
                 <div class="level-left">
                   <div class="level-item">
-                    <strong>Stay up to date!</strong>
+                    <strong>跟踪最新动态！</strong>
                   </div>
                 </div>
                 <div class="level-right">
@@ -103,7 +103,7 @@
                       <span class="icon is-small">
                         <i class="fa fa-rss"></i>
                       </span>
-                      <span>Subscribe</span>
+                      <span>订阅</span>
                     </a>
                   </div>
                 </div>
@@ -113,42 +113,42 @@
         </div>
       </div>
       <div class="navbar-item has-dropdown is-hoverable">
-        <div class="navbar-link">
-          More
+        <div class="navbar-link" title="More">
+          更多
         </div>
         <div id="moreDropdown" class="navbar-dropdown {% if include.boxed %}is-boxed{% endif %}">
           <a class="navbar-item {% if page.route == 'bulma-start' %}is-active{% endif %}" href="{{ site.url }}/bulma-start/">
             <p>
-              <strong>Bulma start</strong>
+              <strong title="Bulma start">起步</strong>
               <br>
-              <small>A tiny npm package to get started</small>
+              <small title="A tiny npm package to get started">从一个很小的 npm 包开始</small>
             </p>
           </a>
           <hr class="navbar-divider">
           <a class="navbar-item {% if page.route == 'made-with-bulma' %}is-active{% endif %}" href="{{ site.url }}/made-with-bulma/">
             <p>
-              <strong>Made with Bulma</strong>
+              <strong title="Made with Bulma">Made with Bulma</strong>
               <br>
-              <small>The official community badge</small>
+              <small title="The official community badge">官方的社区徽标</small>
             </p>
           </a>
           <hr class="navbar-divider">
           <a class="navbar-item {% if page.route == 'extensions' %}is-active{% endif %}" href="{{ site.url }}/extensions/">
             <p>
-              <strong>Extensions</strong>
+              <strong title="Extensions">扩展</strong>
               <br>
-              <small>Side projects to enhance Bulma</small>
+              <small title="Side projects to enhance Bulma">增强 Bulma 的其他项目</small>
             </p>
           </a>
         </div>
       </div>
-      <a class="navbar-item {% if page.route == 'expo' %}is-active{% endif %}" href="{{ site.url }}/expo/">
+      <a class="navbar-item {% if page.route == 'expo' %}is-active{% endif %}" href="{{ site.url }}/expo/" title="Expo">
         <span class="bd-emoji">⭐️</span>
-        Expo
+        网站实例
       </a>
-      <a class="navbar-item {% if page.route == 'love' %}is-active{% endif %}" href="{{ site.url }}/love/">
+      <a class="navbar-item {% if page.route == 'love' %}is-active{% endif %}" href="{{ site.url }}/love/" title="Love">
         <span class="bd-emoji">❤️</span>
-        Love
+        点赞
       </a>
     </div>
 
@@ -173,7 +173,7 @@
               <span class="icon">
                 <i class="fa fa-download"></i>
               </span>
-              <span>Download</span>
+              <span title="Download">下载</span>
             </a>
           </p>
         </div>

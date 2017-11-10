@@ -4,8 +4,8 @@
       <div class="intro-columns">
         <div class="intro-column is-content">
           <div class="intro-content">
-            <h1 class="title intro-title">
-              <strong>Bulma</strong> is a free and open source <strong>CSS</strong> framework based on <strong>Flexbox</strong>.
+            <h1 class="title intro-title" title="Bulma is a free and open source CSS framework based on Flexbox">
+              <strong>Bulma</strong> 是一个基于 <strong>Flexbox</strong> 的免费开源的 <strong>CSS</strong> 框架。
             </h1>
 
             <div id="ghbtns" class="intro-ghbtns">
@@ -15,19 +15,18 @@
 
             {% assign npmInstall = 'npm install bulma' %}
 
-            <pre id="npm" class="intro-npm"><code>{{ npmInstall }}</code><code id="npmCopy" class="intro-npm-copy" data-clipboard-text="{{ npmInstall }}">copy</code></pre>
+            <pre id="npm" class="intro-npm"><code>{{ npmInstall }}</code><code id="npmCopy" class="intro-npm-copy" data-clipboard-text="{{ npmInstall }}">复制</code></pre>
 
             <nav class="intro-buttons">
               <a class="button is-primary is-large" href="{{ site.download }}">
                 <span>
-                  <strong>Download</strong>
+                  <strong>下载</strong>
                   <small>v{{ site.version }}</small>
                 </span>
               </a>
               <a class="button is-light is-large" href="{{ site.documentation }}">
                 <span>
-                  <span>View</span>
-                  <strong>docs</strong>
+                  <span>查看</span><strong>文档</strong>
                 </span>
               </a>
             </nav>
@@ -49,7 +48,7 @@
       </div>
 
       <div class="intro-carbon">
-        {% include carbon.html %}
+        <!-- {% include carbon.html %} -->
       </div>
     </div>
   </div>
